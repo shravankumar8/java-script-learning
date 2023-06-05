@@ -1,0 +1,3 @@
+this is introduction to javascript written by shrsvan lingampally ,only to for his ska eto revice and
+take notes of stuff thanks
+and mostly we will be writing all most of the programms in html internal java code
