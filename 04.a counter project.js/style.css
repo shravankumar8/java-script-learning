@@ -1,0 +1,25 @@
+*{
+    background-color: gray;
+}
+.container{
+   display: flex;
+
+   justify-content: center;
+   align-items: center;
+   margin-top: 110px;
+}
+.container img {
+    display: block;
+
+}
+.followers{
+    margin: 0px;
+    font-size: 50px;
+    text-align: center;
+}
+.counter{
+    margin: 0px;
+    font-size: 100px;
+    text-align: center;
+
+}
