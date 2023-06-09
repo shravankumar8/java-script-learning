@@ -10,6 +10,7 @@ setInterval(() => {
   }
   if(count==1000){
     followers.innerHTML = (`${count} followers`)
+    
 
     
 }
