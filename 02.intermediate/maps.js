@@ -25,3 +25,15 @@ console.log(mapslearning)
 
 console.log(mapslearning.has("2"))
 console.log(mapslearning.has('2'))
+let map = new Map();
+
+map.set('1', 'str1');   // a string key
+map.set(1, 'num1');     // a numeric key
+map.set(true, 'bool1'); // a boolean key
+
+// remember the regular Object? it would convert keys to string
+// Map keeps the type, so these two are different:
+alert( mapslearning.get("2")   ); // 'num1'
+alert( mapslearning.get('1') ); // 'str1'
+
+alert( mapslearning.size ); // 3
