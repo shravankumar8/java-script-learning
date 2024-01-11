@@ -6,16 +6,9 @@
   Once you've implemented the logic, test your code by running
   - `npm run test-anagram`
 */
-str2="silent"
-str1="listen"
+
 function isAnagram(str1, str2) {
-  sortedsstr1 = str1.split("").sort().join("");
-  sortedsstr2 = str2.split("").sort().join("");
-  if(sortedsstr1===sortedsstr2){
-  return true    
-  }
-  return false  
+
 }
 
-console.log(isAnagram(str1, str2))
 module.exports = isAnagram;

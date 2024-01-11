@@ -16,49 +16,7 @@
   Once you've implemented the logic, test your code by running
   - `npm run test-calculator`
 */
-let g = 10 + 2 * (6 - (4 + 1) / 2) + 7;
-// console.log(g)
-class Calculator {
-  constructor(){
-    this.result=0
-  }
-  add(number){
-    this.result+=number
-  }
-  subb(number){
-    this.result-=number
-  }
-  mul(number){
-    this.result*=number
-  }
-  divv(number){
-    if (number==0){
-      throw new Error("cannot divide by zero")
-    }else{
-      this.result/=number
-    }
-  }
-clear(){
-  this.result=0
-}
-display(){
-  console.log(this.result)
-}
-calculate(exp){
-  let d = exp.replace(/\s/g, "");
-  let evald=eval(d)
-  this.result=evald
-  console.log(typeof(evald))
-  
 
-  
-  
+class Calculator {}
 
-}
-}
-k = new Calculator()
-
-
-k.calculate("10 + 2 *            ( 6   -                     (4 + 1) / 2) + 7");
-k.display()
-
+module.exports = Calculator;

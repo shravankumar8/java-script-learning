@@ -9,7 +9,73 @@
 */
 
 function calculateTotalSpentByCategory(transactions) {
-  return [];
+  categorytotal=[]
+  transactions.forEach(transactions => {
+  const {category,price} = transactions
+
+  if(!categorytotal[category]){
+    categorytotal[category]=price
+    
+  }else{
+    categorytotal[category]+=price
+
+}    
+});
+  return categorytotal;
 }
+const transactions = [
+  {
+    itemName: "Item1",
+    category: "Groceries",
+    price: 50,
+    timestamp: Date.now(),
+  },
+  {
+    itemName: "Item2",
+    category: "Groceries",
+    price: 50,
+    timestamp: Date.now(),
+  },
+  {
+    itemName: "Item1",
+    category: "Groceries",
+    price: 50,
+    timestamp: Date.now(),
+  },
+  {
+    itemName: "Item1",
+    category: "Groceries",
+    price: 50,
+    timestamp: Date.now(),
+  },
+  {
+    itemName: "Item1",
+    category: "Groceries",
+    price: 50,
+    timestamp: Date.now(),
+  },
+  {
+    itemName: "Item2",
+    category: "Groceries",
+    price: 30,
+    timestamp: Date.now(),
+  },
+  {
+    itemName: "Item3",
+    category: "Electronics",
+    price: 100,
+    timestamp: Date.now(),
+  },
+  {
+    category:"Fruits",
+    price:200,
+  },
+  {
+    category:"Fruits",
+    price:200,
+  }
+  // Add more transactions as needed
+];
+console.log(calculateTotalSpentByCategory(transactions))
 
 module.exports = calculateTotalSpentByCategory;
