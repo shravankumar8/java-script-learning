@@ -7,7 +7,19 @@
 */
 
 function isPalindrome(str) {
+reversestr=str.split("").reverse().join("");
+if(str===reversestr){
   return true;
 }
+return false;
 
+}
+str="nan"
+str1="madam"
+str2="racecar"
+str3="fridge"
+console.log(`${str1} is a `, isPalindrome(str));
+console.log(`${str1} is a `,isPalindrome(str1))
+console.log(`${str2} is a `, isPalindrome(str2));
+console.log(`${str3} is a `, isPalindrome(str3));
 module.exports = isPalindrome;
